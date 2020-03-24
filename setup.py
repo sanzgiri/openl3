@@ -43,14 +43,11 @@ else:
 
 version = imp.load_source('openl3.version', os.path.join('openl3', 'version.py'))
 
-with open('README.md') as file:
-    long_description = file.read()
-
 setup(
     name='openl3',
     version=version.version,
     description='Deep audio and image embeddings, based on Look, Listen, and Learn approach',
-    long_description=long_description,
+    long_description='Deep audio and image embeddings, based on Look, Listen, and Learn approach',
     long_description_content_type='text/markdown',
     url='https://github.com/marl/openl3',
     author='Jason Cramer, Ho-Hsiang Wu, and Justin Salamon',
